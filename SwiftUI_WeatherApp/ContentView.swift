@@ -9,13 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            VStack {
+                Text("Location")
+                VStack {
+                    Image(systemName: "wind")
+                    Text("Temp")
+                }
+                HStack {
+                    VStack {
+                        Text("Day")
+                        Image(systemName: "wind")
+                        Text("Temp")
+                    }
+                    VStack {
+                        Text("Day")
+                        Image(systemName: "wind")
+                        Text("Temp")
+                    }
+                    VStack {
+                        Text("Day")
+                        Image(systemName: "wind")
+                        Text("Temp")
+                    }
+                    VStack {
+                        Text("Day")
+                        Image(systemName: "wind")
+                        Text("Temp")
+                    }
+                    VStack {
+                        Text("Day")
+                        Image(systemName: "wind")
+                        Text("Temp")
+                    }
+                }
+                Button("Change Time") {
+                    print("Clicked")
+                }
+            }
         }
-        .padding()
     }
 }
 
