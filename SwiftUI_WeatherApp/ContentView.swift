@@ -16,49 +16,79 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Text("Location")
-                    .font(.system(size: 32, weight: .bold, design: .default))
+                    .font(.system(size: 32, weight: .bold))
                     .foregroundColor(.white)
                     .padding()
                 
-                VStack {
-                    Image(systemName: "wind")
-                    Text("Temp")
+                VStack(alignment: .center, spacing: 8) {
+                    Image(systemName: "cloud.sun.fill")
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 150, height: 150)
+                    Text("70°")
+                        .font(.system(size: 60, weight: .medium, design: .rounded))
                         .foregroundColor(.white)
                 }
                 HStack {
                     VStack {
                         Text("Day")
                             .foregroundColor(.white)
-                        Image(systemName: "wind")
-                        Text("Temp")
+                        Image(systemName: "sun.max.fill")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 30, height: 30)
+                        Text("70°")
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                            .foregroundColor(.white)
+                    }
+                    VStack {
+                        Text("Day")
+                            .foregroundColor(.white)
+                        Image(systemName: "wind.snow")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 30, height: 30)
+                        Text("70°")
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                            .foregroundColor(.white)
+                    }
+                    VStack {
+                        Text("Day")
+                            .foregroundColor(.white)
+                        Image(systemName: "cloud.sun.bolt.fill")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 30, height: 30)
+                        Text("70°")
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                            .foregroundColor(.white)
+                    }
+                    VStack {
+                        Text("Day")
+                            .foregroundColor(.white)
+                        Image(systemName: "snowflake")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 30, height: 30)
+                        Text("70°")
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
                             .foregroundColor(.white)
                     }
                     VStack {
                         Text("Day")
                             .foregroundColor(.white)
                         Image(systemName: "wind")
-                        Text("Temp")
-                            .foregroundColor(.white)
-                    }
-                    VStack {
-                        Text("Day")
-                            .foregroundColor(.white)
-                        Image(systemName: "wind")
-                        Text("Temp")
-                            .foregroundColor(.white)
-                    }
-                    VStack {
-                        Text("Day")
-                            .foregroundColor(.white)
-                        Image(systemName: "wind")
-                        Text("Temp")
-                            .foregroundColor(.white)
-                    }
-                    VStack {
-                        Text("Day")
-                            .foregroundColor(.white)
-                        Image(systemName: "wind")
-                        Text("Temp")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 30, height: 30)
+                        Text("70°")
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
                             .foregroundColor(.white)
                     }
                 }
