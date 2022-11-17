@@ -30,7 +30,10 @@ struct ContentView: View {
                         .font(.system(size: 60, weight: .medium, design: .rounded))
                         .foregroundColor(.white)
                 }
-                HStack {
+                
+                Spacer()
+                
+                HStack(spacing: 30) {
                     VStack {
                         Text("Day")
                             .foregroundColor(.white)
@@ -92,12 +95,16 @@ struct ContentView: View {
                             .foregroundColor(.white)
                     }
                 }
+                Spacer()
+                
                 Button("Change Time") {
                     print("Clicked")
                 }
-                .padding()
+                .frame(width: 200, height: 50)
                 .background(.white)
-                    
+                .cornerRadius(10)
+                
+                Spacer()
             }
         }
     }
